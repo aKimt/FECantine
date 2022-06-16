@@ -1,0 +1,30 @@
+<div class="panier">
+
+    <div class="panier-header">
+        <h3>Panier</h3>
+        
+        <mat-icon (click)="onClose()">
+            close
+        </mat-icon>
+    </div>
+
+    <div class="panier-list" *ngIf="panier">
+        <shared-priced-item-list *ngIf="panier.platsChauds" type="plat" [items]="panier.platsChauds" [actions]="actions"></shared-priced-item-list>
+        <shared-priced-item-list *ngIf="panier.sandwiches" type="sandwich" [items]="panier.sandwiches" [actions]="actions"></shared-priced-item-list>
+        <shared-priced-item-list *ngIf="panier.boissons" type="boisson" [items]="panier.boissons" [actions]="actions"></shared-priced-item-list>
+    </div>
+
+    <div>
+        <div class="total-container">
+            <div>
+                <p>total</p>
+            </div>
+            <div>
+                <p class="total">{{ total | currency:'EUR' }}</p>
+            </div>
+        </div>
+        <button mat-raised-button class="confirm-btn" (click)="confirm()">
+            confirmer
+        </button>
+    </div>
+</div>

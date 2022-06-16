@@ -1,0 +1,12 @@
+<div class="panel-holder" [@openClose]="selectedOption ? 'open' : 'closed'" (mouseenter)="triggerMouseIn(true)" (mouseleave)="triggerMouseIn(false)">
+    <div class="control-panel">
+        <div class="selected-action">
+            <div class="info-header">
+                <h4>{{selectedOption ? selectedOption : "annulé"}}</h4>
+                <mat-icon class="info-close" matRipple [matRippleColor]="'rgb(226, 201, 164)'" (click)="onCancel()">close</mat-icon>
+            </div>
+            <button mat-raised-button (click)="onAdd()">add</button>
+            <button mat-raised-button (click)="onCancel()">cancel</button>
+        </div>
+    </div>
+</div>

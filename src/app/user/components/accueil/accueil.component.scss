@@ -1,0 +1,53 @@
+#title-holder {
+    position: relative;
+}
+
+#title-card {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 600px;
+    text-align: right;
+}
+
+#title-card .title {
+    background-color: rgb(226, 201, 164);
+    color: rgb(60, 57, 53);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+#title-card .desc {
+    color: rgb(60, 57, 53);
+    font-size: 24px;
+    background-color: rgb(121, 150, 117, 0.8);
+    margin-top: 10px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+#title-card .link {
+    color: rgb(226, 201, 164);
+    background-color: rgb(60, 57, 53);
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#title-card .link:hover {
+    background-color: rgb(226, 201, 164);
+    color: rgb(60, 57, 53);
+    cursor: pointer;
+}
+
+#accueil-backdrop{
+    -webkit-box-shadow: inset -18px 0px 30px -15px rgba(14, 14, 14, 0.75);
+    -moz-box-shadow:    inset -18px 0px 30px -15px rgba(14, 14, 14, 0.75);
+    box-shadow: inset -400px 0px 100px 0px rgb(14 14 14 / 75%);
+    background-image: url("/assets/img/cantine_title_container.jpg");
+    width: 100%;
+    height: calc(100vh - 102px);
+}

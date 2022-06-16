@@ -1,0 +1,35 @@
+.menu-holder {
+    padding: 40px 20px;
+}
+
+@media screen and (min-witdh: 900px) {
+    .menu-holder {
+        padding: 50px 0;
+    }
+}
+
+
+
+.panier-holder {
+    background-color: aqua;
+}
+.supplement-info{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(60, 57, 53);
+    color: rgb(226, 201, 164);
+}
+
+.supplement-info:hover {
+    background-color: rgb(226, 201, 164);
+    color: rgb(60, 57, 53);
+}
+
+.supplement-info-title {
+    background-color: rgb(226, 201, 164);
+    margin-right: 5px;
+}
+
+.supplement-info-title:disabled {
+    color: rgb(60, 57, 53);
+}

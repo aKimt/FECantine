@@ -1,0 +1,60 @@
+.price-zone{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: calc(75% - 40px);
+    width: 80px;
+    padding: 6px;
+    
+    border: 3px solid rgb(60, 57, 53);
+    border-radius: 5px;
+}
+.price-zone p{
+    margin: 0;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.item-name {
+    padding: 14px 40px 10px 20px;
+    width: 75%;
+    font-size: 20px;
+    background-color: rgb(226, 201, 164);
+    color: rgb(60, 57, 53);
+}
+
+.item-name p {
+    margin: 0;
+}
+
+.item-btn {
+    width: calc(25% - 5px);
+    background-color:  rgb(60, 57, 53);
+    padding: 13px 5px 5px 25px;
+    text-align: center;
+    color: white;
+}
+
+.item-btn:hover {
+    background-color: rgb(226, 201, 164);
+}
+
+.action-panel {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    width: 75%;
+    z-index: 3;
+}
+
+.action-menu {
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    width: calc(25% - 5px);
+    z-index: 3;
+}

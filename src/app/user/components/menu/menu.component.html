@@ -1,0 +1,42 @@
+<ng-template #loading>
+    loading...
+</ng-template> 
+
+<div class="container-fluid menu-holder">
+
+
+    <div *ngIf="produits; else loading">
+        <div class="row">
+            <div class="col-lg">
+                <div class="stylized-header">
+                    <h3>Plats chauds</h3>
+                </div>
+                <shared-priced-item-list [items]="produits.platChauds" type="plat" [actions]="actions"></shared-priced-item-list>
+            </div>
+
+            <div class="col-lg">
+                <div class="stylized-header">
+                    <h3>Boissons</h3>
+                </div>
+                <shared-priced-item-list [items]="produits.boissons" type="boisson" [actions]="actions"></shared-priced-item-list>
+            </div>
+            
+            <div class="col-lg">
+                <div class="stylized-header">
+                    <h3>Sandwiches</h3>
+                </div>
+                
+                <shared-priced-item-list [items]="produits.sandwiches" type="sandwich" [actions]="actions"></shared-priced-item-list>
+                <div>
+                    <button mat-button class="supplement-info-title" disabled>
+                        Suppléments
+                    </button>
+                    <button mat-raised-button *ngFor="let sup of supplements" [matTooltip]="sup.qte + ' ' + sup.unite" class="supplement-info">
+                        {{sup.ingredient}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

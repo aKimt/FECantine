@@ -1,0 +1,9 @@
+<div [@openClose]="open ? 'open' : 'closed'" class="anim-recipient" (mouseenter)="triggerMouseIn(true)" (mouseleave)="triggerMouseIn(false)">
+    <div  class="hidden-action-list" *ngIf="actions">
+        <div *ngFor="let action of actions">
+            <button mat-raised-button class="hidden-action" [matTooltip]="action.message" [matTooltipPosition]="'left'" (click)="onClickOn(action.nom)">
+                <mat-icon>{{action.iconName}}</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

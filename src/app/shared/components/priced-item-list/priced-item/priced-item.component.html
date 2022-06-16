@@ -1,0 +1,27 @@
+<div class="item-row">
+
+    <div class="col-8 item-name">
+        <p>{{ display.nom }}</p>
+    </div>
+    <div class="price-zone ta-center">
+        <p>{{ display.prix | currency:'EUR' }}</p>
+    </div>
+    <div class="col-4 item-btn ta-center" (mouseenter)="closedToOpen()" (mouseleave)="openToClosed()">
+        <mat-icon *ngIf="!display.qte; else show_qte">
+            {{ isOpen ? 'menu' : 'add' }}
+        </mat-icon>
+        <ng-template #show_qte>
+            <p>{{display.qte}}</p>
+        </ng-template>
+    </div>
+
+    <div class="action-panel" *ngIf="possibleActions && isActionPossible('display-info')">
+        <shared-action-panel [isOpen]="isControlPanelOpen" [itemType]="productType" [selectedItem]="display" (mousein)="onMouseIn($event)" (cancelled)="isPanelOpen = false"></shared-action-panel>
+    </div>
+    
+
+    <div class="action-menu">
+        <shared-action-menu [isOpen]="isOpen" (mousein)="onMouseIn($event)" (optionClicked)="onClick($event)"  [actions]="actions"></shared-action-menu>
+    </div>
+    
+</div>

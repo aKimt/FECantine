@@ -1,0 +1,7 @@
+<div class="row">
+
+    <div class="priced-item-holder" *ngFor="let item of itemList">
+        <shared-priced-item [item]="item" [type]="type" [actions]="possibleActions"></shared-priced-item>
+    </div>
+
+</div>

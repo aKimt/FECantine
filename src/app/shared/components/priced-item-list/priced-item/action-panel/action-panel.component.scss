@@ -1,0 +1,40 @@
+.panel-holder{
+    overflow: hidden;
+}
+
+.control-panel {
+    padding: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.8914916308320203) 12.5%, rgba(0,0,0,0) 50%);
+}
+
+.selected-action {
+    color: rgb(60, 57, 53);
+    background-color: rgb(226, 201, 164);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.info-header {
+    background-color: rgb(60, 57, 53);
+    color: rgb(226, 201, 164);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info-header h4 {
+    margin: 0;
+}
+
+.info-close {
+    color: rgb(60, 57, 53);
+    background-color: rgb(226, 201, 164);
+    border-radius: 5px;
+}
+
+.info-close:hover {
+    background-color: rgb(60, 57, 53);
+    color: rgb(226, 201, 164);
+}

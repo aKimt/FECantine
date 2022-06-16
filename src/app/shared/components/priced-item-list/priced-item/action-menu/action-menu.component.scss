@@ -1,0 +1,23 @@
+
+.anim-recipient {
+    color: aliceblue;   
+    overflow: hidden;
+}
+
+.hidden-action-list {
+    padding: 5px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.8914916308320203) 25%, rgba(0,0,0,0) 100%);
+}
+
+.hidden-action{
+    width: 100%;
+    margin-bottom: 4px;
+    background-color: rgb(60, 57, 53);
+    color: blanchedalmond;
+}
+
+.hidden-action:hover {
+    background-color: blanchedalmond;
+    color: rgb(60, 57, 53);
+}

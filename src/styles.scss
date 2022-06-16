@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+html {
+    height: calc(100vh - 55px);
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, 
+    "Helvetica Neue", sans-serif; 
+    height: calc(100vh - 55px);
+    position: relative;
+}
+
+.cart-btn {
+    position: absolute;
+    color: rgb(60, 57, 53);
+    background-color: rgb(226, 201, 164);
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 35px;
+    padding: 10px;
+    z-index: 5;
+    border: 2px solid rgb(60, 57, 53);
+    border-radius: 8px;
+}
+
+.cart-btn:hover {
+    background-color: rgb(60, 57, 53);
+    color: rgb(226, 201, 164);
+}
+
+.cart-btn:active {
+    color: rgb(60, 57, 53);
+    background-color: rgb(226, 201, 164);
+}
+
+.mat-drawer {
+    width: 28%;
+    background-color: rgb(86, 103, 83);
+    border-right: 1px solid rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 1100px ) {
+    .mat-drawer {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mat-drawer {
+        width: 100%;
+    }
+}
+
+
+
+.mat-drawer-inner-container {
+    background: rgb(91, 104, 89);
+    background: linear-gradient(-90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+}
+
+.stylized-header{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(60, 57, 53);
+    background-color: rgb(60, 57, 53);
+    margin: 25px 0;
+}
+
+.stylized-header h3 {
+    position: absolute;
+    left: 15%;
+    top: -16px;
+    background-color: rgb(121, 150, 117);
+    color: rgb(60, 57, 53);
+    font-size: 24px;
+    padding: 0 10px;
+    z-index: 1;
+}

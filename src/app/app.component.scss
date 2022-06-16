@@ -1,0 +1,20 @@
+.panier-holder {
+    padding: 20px;
+}
+
+.content-holder {
+    height: calc(100vh - 102px);
+    overflow-y: scroll;
+    background-color: rgb(121, 150, 117);
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(226, 201, 164);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 3px;
+    margin: 0 1px;
+    background-color: rgb(60, 57, 53);
+}
